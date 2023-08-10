@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Weather forcasting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- -------------------------------favicon------------------------------- -->
+    <link href="./images/Iynque-Ios7-Style-Weather.ico" rel="icon" type="image/png">
+    
+    <!-- -------------------------------Linking fonts--------------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--------------------------------- Linking ---------------------------->
+    <!-- linking bootstrap style sheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- linking awsome font style sheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- linking media query style sheet -->
+    <link rel="stylesheet" href="./css/mediaQuary.css" />
+    <!-- linking main css style sheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body class="">
+    
+        <!-- * Navbar section -->
+            <nav class="navbar navbar-expand-lg fixed-top ">
+                <div class="container">
+                    <div class="navbar-brand" href="#">
+                        <h1 class=""><i class="fa-solid fa-cloud-sun-rain"></i>Weather</h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news">News</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#live">Live Cameras</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#photos">Photos</a>
+                            </li>
+            
+            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+            
+            
+                        </ul>
+            
+                    </div>
+                </div>
+            </nav>
+        <!-- * header section -->
+
+        <header class="container-fluid  " id="home">
+            <div class="searchInput d-flex flex-nowrap">
+                <input class="form-control my-5 loc" type="text" placeholder="Find your location" aria-label="default input example">
+                <button type="button" class="btn findBtn btn-info" onclick="main()">Find</button>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card today" id="today">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2 class="day">wednesday</h2>
+                            <h2 class="date">9August</h2>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title city">Alexandria</h5>
+                            <div class="d-flex align-items-baseline todayTemp ">
+                                <h5 class="card-text temp d-inline  me-5"> 20°C </h5>
+                                <img src="./images/weather/64x64/day/176.png"  class="w-25 " alt="weather icon">
+                            </div>
+
+                            <h6 class="descrip ">sunny</h6>
+                            
+                            <i class="fa-solid fa-umbrella"></i>
+                            <h6 class="rain d-inline-block me-3">20%</h6>
+                            <i class="fa-solid fa-wind"></i>
+                            <h6 class="wind d-inline-block me-3">18km/h</h6>
+                            <i class="fa-regular fa-compass"></i>
+                            <h6 class="dir d-inline-block ">east</h6>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card" id="tommorow">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2 class="day  mx-auto">Thursday</h2>
+
+                        </div>
+                        <div class="card-body ">
+                            <img src="./images/weather/64x64/day/113.png"  class="my-3" alt="weather icon">
+                            <h5 class="card-text tempMx"> 21°C</h5>
+                            <h6 class="tempMn ">18°C</h6>
+                            <h6 class="descrip text-center">sunny</h6>
+
+                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card text-center" id="dayafter">
+                        <div class="card-header d-flex justify-content-between">
+                            <h2 class="day mx-auto">Friday</h2>
+                        </div>
+                        <div class="card-body">
+                            <img src="./images/weather/64x64/day/113.png"  class="my-3" alt="weather icon">
+                            <h5 class="card-text tempMx"> 21°C</h5>
+                            <h6 class="tempMn ">18°C</h6>
+                            <h6 class="descrip text-center">sunny</h6>
+                
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+    <!-- linking java script files -->
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/main.js"></script>
+
+</body>
+</html>
